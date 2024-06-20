@@ -10,9 +10,9 @@ setup(name='tap-google-ads',
       classifiers=['Programming Language :: Python :: 3 :: Only'],
       py_modules=['tap_google_ads'],
       install_requires=[
-          'singer-python==5.12.2',
+          "singer-python@git+https://github.com/nikitamaruniak/singer-python/@c6329135f75b3c6665a729afca3f1dc5b222546d",
           'requests>=2.26.0',
-          'backoff==1.8.0',
+          'backoff~=2.2.1',
           'google-ads==22.1.0',
           'protobuf==4.24.4',
           # Necessary to handle gRPC exceptions properly, documented
